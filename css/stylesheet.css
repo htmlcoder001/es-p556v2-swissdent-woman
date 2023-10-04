@@ -339,3 +339,17 @@ button::-moz-focus-inner {
     background: #166fe5;
     text-decoration: none;
 }
+
+.smiley-icon {
+    display: inline-block;
+    position: relative;
+    width: 18px;
+    height: 18px;
+    background-image: url(../images/smiley-icon.png);
+    background-repeat: no-repeat;
+    -webkit-background-size: contain;
+    background-size: contain;
+    background-position: center;
+    
+    margin-bottom: -2px;
+}
