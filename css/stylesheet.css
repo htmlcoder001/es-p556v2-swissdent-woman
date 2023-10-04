@@ -21,7 +21,7 @@
 
 #form-wrap {
     max-width: 400px;
-    margin: 0 auto;
+    margin: 32px auto 48px auto;
 }
 
 #product-bg-wrap {
@@ -92,12 +92,8 @@ product-bg:before {
     color: #000;
 }
 
-#form button {
-    text-transform: uppercase;
-}
-
 #form .discount {
-    font-size: 40px;
+    font-size: 36px;
     color: #d84949;
     line-height: 1.2;
 }
@@ -123,7 +119,7 @@ product-bg:before {
 
 #form #price {
     line-height: 1.2;
-    margin: 10px auto;
+    margin: 12px auto;
     display: flex;
     font-size: 32px;
     flex-wrap: wrap;
@@ -157,14 +153,15 @@ product-bg:before {
 
 select,
 #form form input {
-    height: 70px;
-    font-size: 20px;
-    margin: 0 0 24px 0;
-    padding-left: 10px;
-    border-top: 0;
-    border-left: 0;
-    border-right: 0;
-    color: gray;
+    height: 52px;
+    font-size: 17px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    margin: 0 0 12px 0;
+    padding-left: 16px;
+    padding-right: 16px;
+    color: #1d2129;
+    border: 1px solid #dddfe2;
 }
 
 #form form input:focus {
@@ -178,17 +175,27 @@ select,
 }
 
 #form form button {
-    height: 80px;
-    font-size: 30px;
-    background: #3578e5;
-    background: linear-gradient(90deg, #041e37 0, rgba(9, 70, 121, 1) 35%, #5181b0 100%);
+    height: 48px;
+    font-size: 20px;
+    font-family: Helvetica, Arial, sans-serif;
+    background: #1877f2;
+    font-weight: 700;
     color: white;
     border: 0;
+    cursor: pointer;
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    -ms-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s;
+}
+#form form button:hover {
+    background: #166fe5;
 }
 
 #form form input,
 #form form button {
-    border-radius: 5px;
+    border-radius: 6px;
 }
 
 #form form #protection {
@@ -294,4 +301,41 @@ button::-moz-focus-inner {
 
 #state_close_prev img {
     width: 30px;
+}
+
+
+.cta-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cta-button__anchor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 24px auto;
+    height: 48px;
+    width: 100%;
+    max-width: 370px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    border-radius: 6px;
+    font-size: 20px;
+    font-family: Helvetica, Arial, sans-serif;
+    background: #1877f2;
+    font-weight: 700;
+    color: white;
+    border: 0;
+    cursor: pointer;
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    -ms-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s;
+}
+.cta-button__anchor:hover {
+    background: #166fe5;
+    text-decoration: none;
 }
